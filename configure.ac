@@ -401,6 +401,18 @@ tvcharts/Makefile
 tvcharts/meta/Makefile
 tvcharts/src/Makefile
 
+TVSpielfilm/Makefile
+TVSpielfilm/meta/Makefile
+TVSpielfilm/src/Makefile
+TVSpielfilm/src/db/Makefile
+TVSpielfilm/src/pics/Makefile
+TVSpielfilm/src/pics/FHD/Makefile
+TVSpielfilm/src/pics/FHD/icons/Makefile
+TVSpielfilm/src/pics/FHD/logos/Makefile
+TVSpielfilm/src/pics/HD/Makefile
+TVSpielfilm/src/pics/HD/icons/Makefile
+TVSpielfilm/src/pics/HD/logos/Makefile
+
 unwetterinfo/Makefile
 unwetterinfo/meta/Makefile
 unwetterinfo/src/Makefile

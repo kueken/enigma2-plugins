@@ -69,6 +69,7 @@ SUBDIRS = \
 	transcodingsetup \
 	transmission \
 	tvcharts \
+	TVSpielfilm \
 	unwetterinfo \
 	valixdcontrol \
 	virtualzap \

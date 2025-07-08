@@ -1,6 +1,18 @@
 ARD Mediathek Plugin für Enigma2
 
+Version 1.8
+- Hoster(Stream Quellen) use API-v6
+
+Version 1.6
+- Add Glass skin
+- Fix "Unsere Region", navi bug & OverflowError
+
 Version 1.5
+- Handlung Download
+- AutoPlay(immer beste)
+- suche optimiert
+- Play & Download Funktion optimiert
+- Untertitle Cleaner
 
 Version 1.3
 - Neue Skins
