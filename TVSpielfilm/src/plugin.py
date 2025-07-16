@@ -42,7 +42,7 @@ from Screens.LocationBox import defaultInhibitDirs, LocationBox
 from Screens.MessageBox import MessageBox
 from Screens.Screen import Screen
 from Screens.Setup import Setup
-from Screens.TimerEdit import RecordTimerEdit, RecordTimerEntry
+from Screens.TimerEdit import TimerEntry
 from Tools.BoundFunction import boundFunction
 from Tools.Directories import resolveFilename, isPluginInstalled, SCOPE_PLUGINS, SCOPE_SKIN_IMAGE, SCOPE_CONFIG
 from Tools.LoadPixmap import LoadPixmap
