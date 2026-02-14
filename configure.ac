@@ -445,12 +445,6 @@ werbezapper/meta/Makefile
 werbezapper/po/Makefile
 werbezapper/src/Makefile
 
-weathercomponent/Makefile
-weathercomponent/src/Makefile
-
-weathercomponenthandler/Makefile
-weathercomponenthandler/src/Makefile
-
 zaphistorybrowser/Makefile
 zaphistorybrowser/meta/Makefile
 zaphistorybrowser/po/Makefile

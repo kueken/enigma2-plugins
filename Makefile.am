@@ -78,8 +78,6 @@ SUBDIRS = \
 	vfdcontrol \
 	webcamviewer \
 	werbezapper \
-	weathercomponent \
-	weathercomponenthandler \
 	zapstatistic \
 	zdfmediathek
 
