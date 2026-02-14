@@ -87,6 +87,11 @@ babelzapper/etc/Makefile
 babelzapper/meta/Makefile
 babelzapper/src/Makefile
 
+birthdayreminder/Makefile
+birthdayreminder/meta/Makefile
+birthdayreminder/po/Makefile
+birthdayreminder/src/Makefile
+
 blindscan/src/Makefile
 blindscan/po/Makefile
 blindscan/Makefile
@@ -439,6 +444,17 @@ werbezapper/Makefile
 werbezapper/meta/Makefile
 werbezapper/po/Makefile
 werbezapper/src/Makefile
+weatherplugin/Makefile
+weatherplugin/meta/Makefile
+weatherplugin/po/Makefile
+weatherplugin/src/Makefile
+weatherplugin/src/icons/Makefile
+
+weathercomponent/Makefile
+weathercomponent/src/Makefile
+
+weathercomponenthandler/Makefile
+weathercomponenthandler/src/Makefile
 
 zaphistorybrowser/Makefile
 zaphistorybrowser/meta/Makefile
