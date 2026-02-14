@@ -444,11 +444,6 @@ werbezapper/Makefile
 werbezapper/meta/Makefile
 werbezapper/po/Makefile
 werbezapper/src/Makefile
-weatherplugin/Makefile
-weatherplugin/meta/Makefile
-weatherplugin/po/Makefile
-weatherplugin/src/Makefile
-weatherplugin/src/icons/Makefile
 
 weathercomponent/Makefile
 weathercomponent/src/Makefile

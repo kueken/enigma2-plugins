@@ -78,7 +78,6 @@ SUBDIRS = \
 	vfdcontrol \
 	webcamviewer \
 	werbezapper \
-	weatherplugin \
 	weathercomponent \
 	weathercomponenthandler \
 	zapstatistic \
