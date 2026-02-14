@@ -10,6 +10,7 @@ SUBDIRS = \
 	autoresolution \
 	autotimer \
 	babelzapper \
+	birthdayreminder \
 	blindscan \
 	bonjour \
 	btdevicesmanager \
@@ -77,6 +78,9 @@ SUBDIRS = \
 	vfdcontrol \
 	webcamviewer \
 	werbezapper \
+	weatherplugin \
+	weathercomponent \
+	weathercomponenthandler \
 	zapstatistic \
 	zdfmediathek
 
