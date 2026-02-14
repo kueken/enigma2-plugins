@@ -36,7 +36,6 @@ config.plugins.ZDF.UT_DL = ConfigYesNo(default=False)
 config.plugins.ZDF.COVER_DL = ConfigYesNo(default=False)
 PLUGINPATH = "/usr/lib/enigma2/python/Plugins/Extensions/ZDFMediathek/"
 FHD = getDesktop(0).size().height() > 720
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0"
 SKINFILE = PLUGINPATH + "skin_FHD.xml" if FHD else PLUGINPATH + "skin_HD.xml"
 FONT = "/usr/share/fonts/LiberationSans-Regular.ttf"
 if not path.exists(FONT):
@@ -63,10 +62,9 @@ def readskin():
 
 def geturl(url):
     try:
-        r = requests.get(url, timeout=10, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8", "Accept-Language": "de,en-US;q=0.7,en;q=0.3", "Accept-Encoding": "gzip, deflate"})
-        r.raise_for_status()
-        return r.content
-    except requests.RequestException:
+        response = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"})
+        return response.content
+    except Exception:
         return ""
 
 
@@ -164,6 +162,7 @@ class ZDFMediathek(Screen):
 
     def DL_Start(self, answer):
         if answer:
+            UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
             url = answer[1].split("##")
             self.DL_File = str(config.plugins.ZDF.savetopath.value) + str(answer[0])
             if path.exists(self.DL_File):
@@ -346,7 +345,7 @@ class ZDFMediathek(Screen):
         plot += " UT" if sta.get("ut", {}).get("enabled") is True else ""
         plot += " AD" if sta.get("ad", {}).get("enabled") is True else ""
         plot += " DGS" if sta.get("dgs", {}).get("enabled") is True else ""
-        plot += " " + js.get("fsk", "").upper() if not js.get("fsk", "") in "none" else ""
+        plot += " " + js.get("fsk", "").upper() if js.get("fsk", "") not in "none" else ""
         if not js.get("beschreibung", "") == js.get("textLong", "") and js.get("beschreibung") and js.get("textLong"):
             plot += "\n\n" + js.get("beschreibung") + "\n\n" + js.get("textLong")
         else:
